@@ -1,0 +1,117 @@
+html,
+body {
+  margin: 0;
+}
+
+#App {
+  font-family: sans-serif;
+
+  /* Give app full page to work with */
+  height: 100vh;
+}
+
+#page-wrap {
+  text-align: center;
+
+  /* Prevent sidebar from showing a scrollbar on page */
+  overflow: auto;
+  
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: white;
+  transition: color 0.2s;
+}
+
+/* Change color on hover */
+/* .bm-item:hover {
+  color: red;
+} */
+
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position:absolute;
+  width: 36px;
+  height: 28px;
+  margin: 15px 20px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #68778F;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+/* .bm-cross {
+  background: white;
+} */
+
+/* General sidebar styles */
+.bm-menu {
+  background: #1F85F1;
+  padding: 2.5em 0 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #68778F;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.10);
+}
+
+/* ul li {
+  list-style: none;
+} */
+
+li{
+  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAABCklEQVQ4je2Tr0rDYRSGnzMNu4BVhXkFBuuwCVsQvAGbGl0VgwjOvLqgV2Bc0iZoExXECzDKQJNlyGP5BmPu98f9qi+c8L3nPQ/nhA9KSO2onTLZKAAtAafAerKegJOI+M6aqeXAGsAQGAPbqcbAUG2og1StwrXVDfVRbc/ptVPvVT1T94tge+q92szJNFPmOhOo1tUL9VKtl7iinrJXv/LqinqrHhaB5oB31Tt1bWJsqu9q96+wKWg3MVo14BPoA1+LAtNsH/ioRcQzMKoAm2gUES/LeQn1GFidsd8iopc1kwsEdoCDGW8ALAwkIh6m32puPvPrLap/YHUFgLoFnFdkHUXETfWVZvQDL7yxtlmY+P0AAAAASUVORK5CYII=');
+  padding-left: 1em; 
+  text-indent: -.7em;
+  font-size: 20px;
+  /* width: 32vh; */
+
+}
+p{
+  font-weight: bold;
+}
+.dashboard{
+  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAABWUlEQVQ4jeWTvy9DYRSGnyMdpJIaOjeiE2ESixqEgXSRNCRYy8K/YOOfkGjsKhKTUIuSWIWEzaQDg/gxmCSvwdHc8H1t0k18yUnO/c55n/Oem3vh3x2LFSSlgAmPHCCgAdSBupl9hHRdAZBJKgNXwCJwAzwDT54vAdeSliVFDX3D0pJ2JW1LyibuZyUVE89ZSRVJVUnpGMwk7Uu6l9TXcvJXf15SwzVNp8mV14AHX3OuHdB75oFHYDW06q2kTAs3+Uit17XppMMicGhmbxE3m8BGqGBmr8ARMJMETgK1iIMMMAQMxzYAjoGpJDAHDEoaCTSXgAOPUmDgKDDgjCbQ3EV/AFgATj0KgXretd0AKb+84+sdngQEl8C653s/i2ZWlfQCLCSBVz79F9DMtiTden4WGAgwDpyD/8uSeoALoBwRtDs7wJiZvTe/cEkrwHSHwJqZVTrU/vXzCbD0qjXoZDOlAAAAAElFTkSuQmCC');
+}
+.statistic{
+  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAABHklEQVQ4jdXTPUoDURTF8f+LH+AOrC2ErEEtUgqiC3C24AYCDgErV6CNVWIxY2PAMqUWgaBFUljaugIhIscid/CYkCIoYi4MXH68ubzHeQ/+e6WqkbQJZMAK8JBSug+vA4exrJtSeg7fBXaAD6CdUnr9NllSU1/1aH5t3jF/Mm9WXrOZ63P6tUV81bAH7MeRb827wJb1VRXAURy5x/KVpLqkjqRS0rF5Q1IRX8M8i7WduAkzA3NLbWhemBfmQ/O88tr04J+Wp3wDbDO5Ap7mpfUX1p8zufBjoPztjf1BSdqT1Jc0kHRqnoUNptLPw/rxrmcGtiy1kXlpXpqPzFuVe8rjOf37Iu4pXzF58BvAnfkZ8BJ92/wEOADe4t8lqU84+QReZBAOtAAAAABJRU5ErkJggg==');
+}
+ul li:hover{
+  background-color: white;
+  color: #1F85F1;
+  border-radius: 10px 0 0 10px;
+  width: 100%;
+}
+ul li{
+  color: white;
+}
+.side {
+  color: white;
+}
